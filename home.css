@@ -10,6 +10,8 @@ body, ul, li, nav, p{
 }
 
 
+@media screen and (min-width: 1201px) {
+
 header{
     background-image:linear-gradient(to right,#466C9B, #0F3D74);
     width: 100%;
@@ -74,7 +76,6 @@ header li:last-child:hover{
     transition: all 0.3s ;
 }
 
-
 .homeBackground .homebg{
     width: 100%;
     filter:brightness(50%);
@@ -92,8 +93,6 @@ header li:last-child:hover{
     gap: 10px;
 }
 
-
-
 #home-caption .umaFigure{
     height: 100vh;
     background-position: center;
@@ -105,14 +104,13 @@ header li:last-child:hover{
     margin-right: -70px;
 }
 
-
-
-
 #home-caption .homeLogo{
     width: max-content;
     height: max-content;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 #home-caption .homeLogo p {
@@ -144,9 +142,6 @@ header li:last-child:hover{
     );
     transform: translateY(-50%);
 }
-
-
-
 
 #home-second{
     background-color: #ffffff;
@@ -206,6 +201,887 @@ footer p{
     color: white;
     font-family: 'Tahoma';
 }
+}
+
+@media screen and (max-width: 1200px) {
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+
+.homeBackground .homebg{
+    width: 100%;
+    filter:brightness(50%);
+    display: inline-block;
+    height: 800px;
+}
+
+#home-caption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8%;
+    position: absolute;
+    gap: 10px;
+}
+
+#home-caption .umaFigure{
+    height: 100vh;
+    background-position: center;
+    background-size: 480px;
+    background-repeat: no-repeat;
+    animation: umaChange 6s alternate-reverse infinite;
+    width: 50vw;
+    margin-left: -90px;
+    margin-right: -70px;
+}
+
+#home-caption .homeLogo{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#home-caption .homeLogo p {
+    color: white;
+    width: 600px;
+    font-style: normal;
+    font-size: 17px;
+    word-spacing: 2px;
+    text-align: center;
+    
+
+}
+#home-caption .homeLogo img {
+    width: 600px;
+    
+}
+
+.fadeshadow{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-image: linear-gradient(#fff);
+    mask-image: linear-gradient(
+        180deg,
+        transparent,
+        #ffffff 50%,
+        #ffffff 50%,
+        transparent 100%
+    );
+    transform: translateY(-50%);
+}
+
+#home-second{
+    background-color: #ffffff;
+    background-repeat: space repeat;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 100px 0;
+    background-image: url("img/horseshoefall.png");
+    background-repeat: repeat;
+    background-size: 45%;
+    animation: fallingHorseShoe 10s linear infinite;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+#home-second iframe{    
+    width: 45vw;
+    height: 37vh;
+
+}
+
+#home-second .about p{
+    width: 40vw;    
+    font-size: 17px;
+    color: #466C9B;
+}
+#home-second .about{
+    height: max-content;
+    display: flex;
+    width: max-content;
+    gap: 2vw;
+    
+}
+
+#home-second h2{
+    color: #FC9E12;
+    font-size: 30px;
+    margin: 0;
+}
+
+#home-second article{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: 'Tahoma';
+}
+}
+
+@media screen and (max-width: 1024px) {
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+
+.homeBackground .homebg{
+    width: 100%;
+    filter:brightness(50%);
+    display: inline-block;
+    height: 700px;
+}
+
+#home-caption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 22%;
+    position: absolute;
+    gap: 2vw;
+
+}
+
+#home-caption .umaFigure{
+    height: 60vh;
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    animation: umaChange 6s alternate-reverse infinite;
+    width: 40vw;
+}
+
+#home-caption .homeLogo{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#home-caption .homeLogo p {
+    color: white;
+    width: 500px;
+    font-style: normal;
+    font-size: 15px;
+    word-spacing: 2px;
+    text-align: center;
+    
+
+}
+#home-caption .homeLogo img {
+    width: 400px;
+    
+}
+
+.fadeshadow{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-image: linear-gradient(#fff);
+    mask-image: linear-gradient(
+        180deg,
+        transparent,
+        #ffffff 50%,
+        #ffffff 50%,
+        transparent 100%
+    );
+    transform: translateY(-50%);
+}
+
+#home-second{
+    background-color: #ffffff;
+    background-repeat: space repeat;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 100px 0;
+    background-image: url("img/horseshoefall.png");
+    background-repeat: repeat;
+    background-size: 45%;
+    animation: fallingHorseShoe 10s linear infinite;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+#home-second iframe{    
+    width: 45vw;
+    height: 35vh;
+
+}
+
+#home-second .about p{
+    width: 40vw;    
+    font-size: 17px;
+    color: #466C9B;
+}
+#home-second .about{
+    height: max-content;
+    display: flex;
+    width: max-content;
+    gap: 2vw;
+    
+}
+
+#home-second h2{
+    color: #FC9E12;
+    font-size: 28px;
+    margin: 0;
+}
+
+#home-second article{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: 'Tahoma';
+}
+}
+
+@media screen and (max-width: 800px) {
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+header .menu{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    align-self: center;
+
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ header ul{
+    height: 250px;
+    padding: 5px;
+}
+
+input:checked ~ header ul li{
+    visibility: visible;
+}
+header .menu .bar{
+    width: 30px;
+    height: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 20%;
+    transition: .4s;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 67px;
+    background-image: linear-gradient(to right,#39434f,#242f3c);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: 0;
+    transition: height .4s;
+    z-index: -1;
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 17px;
+    visibility: hidden;
+    transition: 1.5ms;
+    
+}
+header li:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    border: none;
+    box-shadow: 0 0 0;
+    color: none;
+}
+
+header li:last-child{
+    background-color: transparent;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    
+}
+
+
+
+.homeBackground .homebg{
+    width: 100%;
+    filter:brightness(50%);
+    display: inline-block;
+    height: 600px;
+}
+
+#home-caption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20%;
+    position: absolute;
+
+}
+
+#home-caption .umaFigure{
+    height: 0;
+    background-position: center;
+    background-size: 0;
+    background-repeat: no-repeat;
+    animation: none;
+    width: 0;
+    display: none;
+}
+
+#home-caption .homeLogo{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home-caption .homeLogo p {
+    color: white;
+    width: 500px;
+    font-style: normal;
+    font-size: 15px;
+    word-spacing: 2px;
+    text-align: center;
+    
+
+}
+#home-caption .homeLogo img {
+    width: 500px;
+   
+}
+
+.fadeshadow{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    background-image: linear-gradient(#fff);
+    mask-image: linear-gradient(
+        180deg,
+        transparent,
+        #ffffff 50%,
+        #ffffff 50%,
+        transparent 100%
+    );
+    transform: translateY(-50%);
+}
+
+#home-second{
+    background-color: #ffffff;
+    background-repeat: space repeat;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 100px 0;
+    background-image: url("img/horseshoefall.png");
+    background-repeat: repeat;
+    background-size: 90%;
+    animation: fallingHorseShoe 10s linear infinite;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+#home-second iframe{    
+    width: 45vw;
+    height: 30vh;
+
+}
+
+#home-second .about p{
+    width: 40vw;    
+    font-size: 13px;
+    color: #466C9B;
+}
+#home-second .about{
+    height: max-content;
+    display: flex;
+    width: max-content;
+    gap: 2vw;
+    
+}
+
+#home-second h2{
+    color: #FC9E12;
+    font-size: 25px;
+    margin: 0;
+}
+
+#home-second article{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: 'Tahoma';
+}
+}
+@media screen and (max-width: 500px) {
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 100px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+header .menu{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    align-self: center;
+
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ header ul{
+    height: 220px;
+    padding: 5px;
+}
+
+input:checked ~ header ul li{
+    visibility: visible;
+}
+header .menu .bar{
+    width: 30px;
+    height: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 20%;
+    transition: .4s;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 59px;
+    background-image: linear-gradient(to right,#39434f,#242f3c);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: 0;
+    transition: height .4s;
+    z-index: -1;
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 14px;
+    visibility: hidden;
+    transition: 1.5ms;
+    
+}
+header li:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    border: none;
+    box-shadow: 0 0 0;
+    color: none;
+}
+
+header li:last-child{
+    background-color: transparent;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    
+}
+
+
+
+.homeBackground .homebg{
+    width: 100%;
+    filter:brightness(50%);
+    display: inline-block;
+    height: 400px;
+}
+
+#home-caption{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 17%;
+    position: absolute;
+
+}
+
+#home-caption .umaFigure{
+    height: 0;
+    background-position: center;
+    background-size: 0;
+    background-repeat: no-repeat;
+    animation: none;
+    width: 0;
+    display: none;
+}
+
+#home-caption .homeLogo{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home-caption .homeLogo p {
+    color: white;
+    width: 400px;
+    font-style: normal;
+    font-size: 12px;
+    word-spacing: 2px;
+    text-align: center;
+    
+
+}
+#home-caption .homeLogo img {
+    width: 300px;
+   
+}
+
+.fadeshadow{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-image: linear-gradient(#fff);
+    mask-image: linear-gradient(
+        180deg,
+        transparent,
+        #ffffff 50%,
+        #ffffff 50%,
+        transparent 100%
+    );
+    transform: translateY(-50%);
+}
+
+#home-second{
+    background-color: #ffffff;
+    background-repeat: space repeat;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 100px 0;
+    background-image: url("img/horseshoefall.png");
+    background-repeat: repeat;
+    background-size: 120%;
+    animation: fallingHorseShoe 10s linear infinite;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+#home-second iframe{    
+    width: 80vw;
+    height: 24vh;
+
+}
+
+#home-second .about p{
+    width: 80vw;    
+    font-size: 11px;
+    color: #466C9B;
+}
+#home-second .about{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 2vw;
+    height: 250px;
+}
+
+#home-second h2{
+    color: #FC9E12;
+    font-size: 20px;
+    margin: 0;
+}
+
+#home-second article{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: 'Tahoma';
+}
+}
+
+
+
 
 
 @keyframes fallingHorseShoe{ 
@@ -250,3 +1126,6 @@ footer p{
         opacity: 1;
     }
 }
+
+
+

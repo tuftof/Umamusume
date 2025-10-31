@@ -143,7 +143,9 @@ main img{
     
 }
 
-
+main img:hover{
+    transform: translateY(-5%);
+}
 main #mainStory{
     width: max-content;
     display: flex;
@@ -224,6 +226,7 @@ main{
         opacity: 1;
     }
 }
+
 
 @keyframes fallingHorseShoe{ 
     100%{
