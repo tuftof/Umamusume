@@ -1,0 +1,188 @@
+@font-face{
+    font-family: Racing-Sans-One;
+    src: url("/fonts/Racing_Sans_One/RacingSansOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Dangrek;
+    src: url("/fonts//Dangrek/Dangrek-Regular.ttf");
+}
+
+body, ul, li, nav, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dangrek'; 
+}
+
+.layer{
+    background-color: white;
+    width: 100%;
+    height: 2800px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+    top: 0;
+}
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);    
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+h2{
+    color: #FC9E12;
+    font-size: 30px;
+    margin: 0;
+}
+p{
+    color: #466C9B;
+    font-size: 18px;
+    text-align: normal;
+}
+body{
+    height: 2700px;
+    background-color: #F8EDEC;
+    background-image: url("/img/horseshoefall.png");
+    background-size: 50%;
+    background-blend-mode: darken;
+    width: 100%;
+    animation: fallingHorseShoe 10s linear infinite;
+}
+main{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    animation: fade-in 1s ease;
+}
+
+main .gameplay-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25vh;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+main #header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5vh;
+    width: fit-content;
+    
+}
+main #header .lines{
+    width: 40vw;
+    height: 0.5vh;
+    background-color: #FC9E12;
+    border-radius: 30px;
+}
+
+main h1{
+    color: #0F3D74;
+    margin: 0 20px;
+    font-size: 33px;
+}
+
+main .Gameplay{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+main .Gameplay img{
+    width: 40vw;
+    height: 45vh;
+    box-shadow: 10px 10px 1px #466C9B, -10px -10px 1px #FC9E12
+}
+main .Gameplay .text{
+    width: 40vw;
+    margin-top: -5vh;
+}
+
+main .Gameplay .text-end{
+    width: 40vw;
+    margin-top: -5vh;
+    text-align: end;
+}
+
+main .Gameplay .text-end p{
+    text-align: end;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fallingHorseShoe{ 
+    100%{
+        background-position: 0 1000px;
+    }
+}

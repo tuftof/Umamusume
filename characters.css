@@ -1,0 +1,616 @@
+@font-face{
+    font-family: Racing-Sans-One;
+    src: url("/fonts/Racing_Sans_One/RacingSansOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Dangrek;
+    src: url("/fonts//Dangrek/Dangrek-Regular.ttf");
+}
+
+body, ul, li, nav, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dangrek'; 
+}
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+.layer{
+    background-color: white;
+    width: 100%;
+    height: 1600px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+    top: 0;
+}
+body{
+    max-height: fit-content ;
+    background-color: #F8EDEC;
+    background-image: url("/img/horseshoefall.png");
+    background-size: 50%;
+    background-blend-mode: darken;
+    width: 100%;
+    animation: fallingHorseShoe 10s linear infinite;
+}
+main{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+main #header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5vh;
+    width: fit-content;
+    margin-top: 3vh;
+}
+main #header .lines{
+    width: 40vw;
+    height: 0.5vh;
+    background-color: #FC9E12;
+    border-radius: 30px;
+}
+
+main h1{
+    color: #0F3D74;
+    margin: 0 20px;
+    font-size: 35px;
+}
+
+
+.umaGallery{
+    width: 100%;
+}
+.umaGallery ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5vh 5vw;
+    gap: 70px;
+    justify-content: center;
+   
+}
+
+.umaGallery p{
+    font-size: 17px;
+    color: #0F3D74;
+
+}
+.umaGallery .umaName{
+    background-color: #FFFFFF;
+    padding: 1vh;
+    height: 5vh;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.umaGallery .silencePic{
+    height: 30vh;
+    margin-left: 20px;
+
+    
+}
+
+.umaGallery .Silence_Suzuka{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #silence{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#29BD70;
+    padding: 2px;
+}
+.umaGallery .biwaPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Biwa_Hayahide{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #biwa{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color: #B03D81;
+    padding: 2px;
+}
+
+.umaGallery .maruPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Maruzensky{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #Maru{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color: #D83A43;
+    padding: 2px;
+}
+
+
+.umaGallery .stillPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Still_in_Love{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #still{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color: #D83A43;
+    padding: 2px;
+}
+
+.umaGallery .grassPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Grass_Wonder{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #grass{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#3A34AC;
+    padding: 2px;
+}
+
+.umaGallery .meishoPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Meisho_Doto{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #meisho{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#46449B;
+    padding: 2px;
+}
+
+.umaGallery .matiPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Matikanetannhauser{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #mati{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#0F8DCE;
+    padding: 2px;
+}
+
+.umaGallery .calstonePic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Calstone_Light_O{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #calstone{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#131B4C;
+    padding: 2px;
+}
+
+.umaGallery .naritaPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Narita_Brian{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #narita{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#75358C;
+    padding: 2px;
+}
+
+.umaGallery .mejiroPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Mejiro_Ryan{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #mejiro{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#14BAAE;
+    padding: 2px;
+}
+
+.umaGallery .almondPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Almond_Eye{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #almond{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#69A9E9;
+    padding: 2px;
+}
+
+.umaGallery .orfevrePic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Orfevre{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #orfevre{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#BE4134;
+    padding: 2px;
+}
+
+.umaGallery .fenomenoPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Fenomeno{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #fenomeno{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#574A74;
+    padding: 2px;
+}
+
+.umaGallery .gentildonnaPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Gentildonna{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #Gentil{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#CF2F2B;
+    padding: 2px;
+}
+
+.umaGallery .superPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Super_Creek{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #super{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#5693DA;
+    padding: 2px;
+}
+
+.umaGallery .symboliPic{
+    height: 30vh;
+    margin-left: 10px;   
+
+}
+.umaGallery .Symboli_Rudolf{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #symboli{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:#1C7763;
+    padding: 2px;
+}
+
+.umaGallery .mrPic{
+    height: 30vh;
+    margin-right: 20px;   
+
+}
+.umaGallery .MrCb{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #mr{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:rgb(111, 195, 70);
+    padding: 2px;
+}
+
+.umaGallery .TMPic{
+    height: 30vh;
+}
+.umaGallery .TM_Opera_O{
+    overflow: hidden;
+    display: flex;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    
+}
+
+.umaGallery #TM{
+    height: fit-content;
+    width: 12vw;
+    box-shadow: 5px 5px#FC9E12, -5px -5px #466C9B;
+    background-color:rgb(255, 0, 111);
+    padding: 2px;
+}
+
+
+
+.fade{
+    animation: fade-in 2s ease;
+    
+}
+   
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+li:hover img{
+    scale: 1.2;
+    transition: scale 0.2s ease-in;
+}
+@keyframes fallingHorseShoe{ 
+    100%{
+        background-position: 0 1000px;
+    }
+}

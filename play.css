@@ -1,0 +1,171 @@
+@font-face{
+    font-family: Racing-Sans-One;
+    src: url("/fonts/Racing_Sans_One/RacingSansOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Dangrek;
+    src: url("/fonts//Dangrek/Dangrek-Regular.ttf");
+}
+
+body, ul, li, nav, p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dangrek'; 
+}
+
+
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);    
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 130px;
+    margin: 15px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+
+body{
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("/img/play-bg.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.images{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+
+.images .logo-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.images .buttons{
+    height: 7vh;
+    scale: 1;
+    width: 10vw;
+    z-index: 0;
+
+}
+.buttons:hover{
+    scale: 0.95;
+    transition: scale 1s forwards;
+}
+.download_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 25%;
+    align-items: end;
+}
+.space{
+    width: 25%;
+}
+.icons-list ul{
+    background-color: rgba(0, 0, 0, 0.777); 
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icons{
+    margin: 10px 5px;  
+    list-style-type: none; 
+    
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+
+    width: 2vw;
+    height: 3vh;
+}
+
+
+div{
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
