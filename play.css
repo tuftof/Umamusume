@@ -1,11 +1,7 @@
-@font-face{
-    font-family: Racing-Sans-One;
-    src: url("/fonts/Racing_Sans_One/RacingSansOne-Regular.ttf");
-}
 
 @font-face {
     font-family: Dangrek;
-    src: url("/fonts//Dangrek/Dangrek-Regular.ttf");
+    src: url("fonts/Dangrek/Dangrek-Regular.ttf");
 }
 
 body, ul, li, nav, p{
@@ -83,7 +79,7 @@ body{
     width: 100%; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
                     rgba(0, 0, 0, 0.5)),
-                      url("/img/play-bg.png");
+                      url("img/play-bg.png");
     background-size: cover;
     overflow: hidden;
 }

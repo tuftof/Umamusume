@@ -1,11 +1,6 @@
-@font-face{
-    font-family: Racing-Sans-One;
-    src: url("/fonts/Racing_Sans_One/RacingSansOne-Regular.ttf");
-}
-
 @font-face {
     font-family: Dangrek;
-    src: url("/fonts//Dangrek/Dangrek-Regular.ttf");
+    src: url("fonts/Dangrek/Dangrek-Regular.ttf");
 }
 
 body, ul, li, nav, p{
@@ -159,7 +154,7 @@ header li:last-child:hover{
     max-width: 100%;
     max-height: 100%;
     padding: 100px 0;
-    background-image: url("/img/horseshoefall.png");
+    background-image: url("img/horseshoefall.png");
     background-repeat: repeat;
     background-size: 45%;
     animation: fallingHorseShoe 10s linear infinite;
@@ -221,15 +216,15 @@ footer p{
 
 @keyframes umaChange{
     0%{
-        background-image: url("/img/MARUZENSKY.png");
+        background-image: url("img/MARUZENSKY.png");
         animation-delay: 2s;
     }
     50%{
-        background-image: url("/img/SYMBOLI.png");
+        background-image: url("img/SYMBOLI.png");
         animation-delay: 4s;
     }
     100%{
-        background-image: url("/img/MRCB.png");
+        background-image: url("img/MRCB.png");
         animation-delay: 6  s;
     }
     
