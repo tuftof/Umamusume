@@ -86,6 +86,7 @@ header li:last-child:hover{
     background-position: center;
     display: inline-block;
     height:110vh;
+    overflow: hidden;
 }
 
 #home-caption{
