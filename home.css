@@ -7,6 +7,7 @@ body, ul, li, nav, p{
     margin: 0;
     padding: 0;
     font-family: 'Dangrek'; 
+
 }
 
 @media screen and (min-width: 1201px) {
@@ -75,11 +76,15 @@ header li:last-child:hover{
     transition: all 0.3s ;
 }
 
-.homeBackground .homebg{
-    width: 100%;
-    filter:brightness(50%);
+.homeBackground{
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: inline-block;
-    height: 800px;
+    height:110vh;
 }
 
 #home-caption{
@@ -267,20 +272,24 @@ header li:last-child:hover{
     transition: all 0.3s ;
 }
 
-.homeBackground .homebg{
-    width: 100%;
-    filter:brightness(50%);
+.homeBackground{
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: inline-block;
-    height: 800px;
+    height: 110vh;
 }
 
 #home-caption{
     width: 100%;
+    position: absolute;
+    top: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 8%;
-    position: absolute;
     gap: 10px;
 }
 
@@ -460,20 +469,24 @@ header li:last-child:hover{
     transition: all 0.3s ;
 }
 
-.homeBackground .homebg{
-    width: 100%;
-    filter:brightness(50%);
+.homeBackground {
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: inline-block;
-    height: 70vh;
+    height: 60vh;
 }
 
 #home-caption{
     width: 100%;
     display: flex;
+    height: 60vh;
     align-items: center;
     justify-content: center;
-    top: -5%;
-    position: absolute;
+    top: 5%;
     gap: 10px;
 }
 
@@ -702,9 +715,13 @@ header li:last-child{
     
 }
 
-.homeBackground .homebg{
-    width: 100%;
-    filter:brightness(50%);
+.homeBackground {
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: inline-block;
     height: 60vh;
 }
@@ -714,8 +731,7 @@ header li:last-child{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10%;
-    position: absolute;
+    top: 5%;
     gap: 5vw;
 
 }
@@ -947,21 +963,23 @@ header li:last-child{
 
 
 
-.homeBackground .homebg{
+.homeBackground{
     width: 100vw;
-    filter:brightness(50%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: inline-block;
-    height: 80vh;
-    overflow: hidden;
+    height: 60vh;
 }
 
 #home-caption{
     width: 100%;
     height: 50vh;
     display: flex;
-    top: 20%;
-    position: absolute;
-    gap: 15%;
+    top: 10%;
+    gap: 7%;
     justify-content: center;
     align-items: center;
 }
@@ -1001,7 +1019,6 @@ header li:last-child{
 .fadeshadow{
     width: 100%;
     height: 200px;
-    position: absolute;
     background-image: linear-gradient(#fff);
     mask-image: linear-gradient(
         180deg,
@@ -1010,7 +1027,6 @@ header li:last-child{
         #ffffff 50%,
         transparent 100%
     );
-    transform: translateY(-50%);
 }
 
 #home-second{

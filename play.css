@@ -11,7 +11,8 @@ body, ul, li, nav, p{
 }
 
 
-header{
+@media screen and (min-width: 1201px){
+    header{
     background-image:linear-gradient(to right,#466C9B, #0F3D74);    
     width: 100%;
     height: max-content;
@@ -21,7 +22,6 @@ header{
     display: flex;
 
 }
-
 header img{
     width: 130px;
     margin: 15px 20px;
@@ -81,6 +81,7 @@ body{
                     rgba(0, 0, 0, 0.5)),
                       url("img/play-bg.png");
     background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -130,7 +131,7 @@ body{
     width: 25%;
 }
 .icons-list ul{
-    background-color: rgba(0, 0, 0, 0.777); 
+    background-color: rgba(2, 2, 2, 0.889); 
     display: flex;
     width: fit-content;
     flex-direction: column;
@@ -153,9 +154,716 @@ body{
     height: 3vh;
 }
 
+div{
+    animation: fade-in 2s forwards;
+}
+}
+@media screen and (max-width: 1200px){
+    header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);    
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+header img{
+    width: 130px;
+    margin: 15px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+
+body{
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/play-bg.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.images{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+
+.images .logo-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.images .buttons{
+    height: 7vh;
+    scale: 1;
+    width: 10vw;
+    z-index: 0;
+
+}
+.buttons:hover{
+    scale: 0.95;
+    transition: scale 1s forwards;
+}
+.download_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 25%;
+    align-items: end;
+}
+.space{
+    width: 25%;
+}
+.icons-list ul{
+    background-color: rgba(2, 2, 2, 0.889); 
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icons{
+    margin: 10px 5px;  
+    list-style-type: none; 
+    
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+
+    width: 2vw;
+    height: 3vh;
+}
 
 div{
     animation: fade-in 2s forwards;
+}
+}
+@media screen and (max-width: 992px){
+    header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);    
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+header img{
+    width: 130px;
+    margin: 15px 20px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: right;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 17px;
+}
+
+header li a:hover{
+    color: #FC9E12;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: #639A66;
+    border: #FC9E12;
+    color: #FC9E12;
+}
+
+header li:last-child{
+    background-color: #FC9E12;
+    margin-right: 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: background-color;
+    
+}
+
+header li:last-child:hover{
+    box-shadow: 0px 0px 0px 3px #0F3D74, 0px 0px 0px 7px #FC9E12, 0px 0px 0px 0.1px #0F3D74;
+    background-color: #FC9E12;
+    transition: all 0.3s ;
+}
+
+body{
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/play-bg.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.images{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+
+.images .logo-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.images .buttons{
+    height: 5vh;
+    scale: 1;
+    width: 20vw;
+    z-index: 0;
+
+}
+.buttons:hover{
+    scale: 0.95;
+    transition: scale 1s forwards;
+}
+.download_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 25%;
+    align-items: end;
+}
+.space{
+    width: 25%;
+}
+.icons-list ul{
+    background-color: rgba(2, 2, 2, 0.889); 
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icons{
+    margin: 10px 5px;  
+    list-style-type: none; 
+    
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+
+    width: 4vw;
+    height: 3vh;
+}
+
+div{
+    animation: fade-in 2s forwards;
+}
+}
+
+@media screen and (max-width: 768px) {
+header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 100px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+header .menu{
+    width: fit-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px 10px auto;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ header ul{
+    height: 220px;
+    padding: 5px;
+}
+
+input:checked ~ header ul li{
+    visibility: visible;
+}
+header .menu .bar{
+    width: 30px;
+    height: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 20%;
+    transition: .4s;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 59px;
+    background-image: linear-gradient(to right,#39434f,#242f3c);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: 0;
+    transition: height .4s;
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 14px;
+    visibility: hidden;
+    transition: 1.5ms;
+    
+}
+header li:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    border: none;
+    box-shadow: 0 0 0;
+    color: none;
+}
+
+header li:last-child{
+    background-color: transparent;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    
+}
+
+body{
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/play-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.images{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+
+.images .logo-buttons{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.images .logo{
+    width: 70vw;
+}
+.images .buttons{
+    height: 4vh;
+    scale: 1;
+    width: 20vw;
+    z-index: 0;
+
+}
+.buttons:hover{
+    scale: 0.95;
+    transition: scale 1s forwards;
+}
+.download_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 25%;
+    align-items: end;
+}
+.space{
+    width: 25%;
+}
+.icons-list ul{
+    background-color: rgba(2, 2, 2, 0.889); 
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icons{
+    margin: 10px 5px;  
+    list-style-type: none; 
+    
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    width: 5vw;
+    height: 3vh;
+}
+
+div{
+    animation: fade-in 2s forwards;
+}
+}
+@media screen and (max-width: 600px) {
+    header{
+    background-image:linear-gradient(to right,#466C9B, #0F3D74);
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+
+}
+
+header img{
+    width: 100px;
+    margin: 15px 25px;
+}
+
+header nav{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+header .menu{
+    width: fit-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px 10px auto;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ header ul{
+    height: 220px;
+    padding: 5px;
+}
+
+input:checked ~ header ul li{
+    visibility: visible;
+}
+header .menu .bar{
+    width: 30px;
+    height: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+    border-radius: 20%;
+    transition: .4s;
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 59px;
+    background-image: linear-gradient(to right,#39434f,#242f3c);
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: 0;
+    transition: height .4s;
+}
+header li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+header li{
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 14px;
+    visibility: hidden;
+    transition: 1.5ms;
+    
+}
+header li:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    
+}
+
+header li a:hover{
+    color: white;
+}
+
+header li:last-child a:hover{
+    color: white;
+}
+
+header li:last-child:hover{
+    background-color: transparent;
+    background-image: linear-gradient(to right,#466C9B, #0F3D74);
+    border: none;
+    box-shadow: 0 0 0;
+    color: none;
+}
+
+header li:last-child{
+    background-color: transparent;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    
+}
+
+body{
+    width: 100%; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), 
+                    rgba(0, 0, 0, 0.5)),
+                      url("img/play-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.images{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+
+.images .logo-buttons{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.images .logo{
+    width: 70vw;
+}
+.images .buttons{
+    height: 4vh;
+    scale: 1;
+    width: 27vw;
+    z-index: 0;
+
+}
+.buttons:hover{
+    scale: 0.95;
+    transition: scale 1s forwards;
+}
+.download_buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 25%;
+    align-items: end;
+}
+.space{
+    width: 25%;
+}
+.icons-list ul{
+    background-color: rgba(2, 2, 2, 0.889); 
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.icons{
+    margin: 10px 5px;  
+    list-style-type: none; 
+    
+}
+
+.icons a{
+    display: flex;
+    align-items: center;
+}
+.icons img{
+    width: 5vw;
+    height: 3vh;
+}
+
+div{
+    animation: fade-in 2s forwards;
+}
 }
 @keyframes fade-in {
     0%{
